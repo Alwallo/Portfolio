@@ -1,0 +1,12 @@
+
+/* Diseño Tablet y Mobile */
+@media (max-width: 820px){
+    li{
+        display: none;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
