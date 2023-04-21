@@ -1,12 +1,375 @@
+/* Variables */
+:root{
+    --gris: #464646;
+    --blancuzco: #F5F5F5;
+    --cyan: rgb(2, 131, 131);
+    --hueso: #EAF2FD;
+    --azulito: #2A7AE4;
+    --blanco: #FFFFFF;
+}
 
-/* Diseño Tablet y Mobile */
-@media (max-width: 820px){
-    li{
-        display: none;
-    }
+/* Globales */
+body{
+    background-color: var(--blancuzco);
+}
+
+main{
+    height: 590px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin: auto 32px;
+}
+
+h1, h2, h3, p{
+    cursor: default;
 }
 
 .flex{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+::-webkit-scrollbar {display: none;}
+
+/* Estilos para el Header */
+.contHeader{
+    justify-content: space-between;
+    margin: 16px 32px;
+}
+
+.contHeader-derecha-nombre{
+    margin-left: 15px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--gris);
+}
+
+.contHeader-derecha-nombre:hover{
+    cursor: default;
+}
+
+.contHeader-derecha-logo{
+    height: 16px;
+    width: 16px;
+}
+
+.contHeader-nav{
+    gap: 32px;
+}
+
+.contHeader-nav a{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gris);
+    text-decoration-line: none;
+}
+
+/* Estilos para la  sección 1 (presentación) */
+.contIntroducción{
+    margin: 16px 0px;
+}
+
+.introduccion{
+    margin-right: 17px;
+}
+
+.presentacion{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    color: var(--gris);
+    margin: 0 auto 24px auto;
+}
+
+.descripcion{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--gris);
+    text-align: justify;
+}
+
+.perfil{
+    border-radius: 50%;
+}
+
+.enlaces a{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gris);
+    margin-right: 32px;
+    text-decoration-line: none;
+}
+
+/* Estilos para la sección 2 (Sobre Mi)*/
+.contSobreMi{
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--hueso);
+}
+
+.contSobreMi h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--gris);
+    margin-bottom: 16px;
+}
+
+.contSobreMi p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gris);
+    margin-bottom: 16px;
+    text-align: justify;
+    margin-right: 300px;
+}
+
+.firma{
+    height: 52px;
+    margin-bottom: 16px;
+}
+
+/* Estilos para la sección 3 (Habilidades y Pasatiempos) */
+.titulo-seccion{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: var(--gris);
+    margin-bottom: 32px;
+}
+
+.contSkills-tools{
+    justify-content: center;
+    margin: 16px 0;
+    gap: 8px;
+}
+
+.contSkills-tools div{
+    padding: 16px;
+    width: 176px;
+    height: 174px;
+    background: var(--blanco);
+}
+
+.contSkills-tools div i{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--azulito);
+    padding-top: 94px;
+    padding-bottom: 8px;
+}
+
+.contSkills-tools div p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--gris);
+}
+
+/* Estilos para la sección 4 (Formación Académica) */
+.contFormacion{
+    background: var(--hueso);
+}
+
+.contFormacion h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: var(--gris);
+    padding-top: 16px;
+}
+
+.contFormacion-cuadros{
+    justify-content: center;
+    gap: 16px;
+}
+
+.contFormacion-cuadros div{
+    justify-content: center;
+    gap: 16px;
+}
+
+.cuadro-logo{
+    background: var(--blanco);
+}
+
+.logo-formacion{
+    width: 150px;
+    height: 100px;
+    padding: 50px;
+}
+
+.contFormacion-cuadros div h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--gris);
+    margin-bottom: 8px;
+}
+
+.contFormacion-cuadros div p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gris);
+    margin-top: 0;
+}
+
+/* Estilos para la sección 5 (Experiencia Laboral) */
+.imagen-experiencia{
+    height: 406px;
+    border: 1px solid var(--azulito);
+}
+
+.detalle-experiencia{
+    margin-left: 16px;
+}
+
+.detalle-experiencia h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--gris);
+    margin-bottom: 8px;
+}
+
+.detalle-experiencia p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gris);
+    margin-bottom: 8px;
+}
+
+.btn-repo{
+    width: 116px;
+    height: 51px;
+    border: 1px solid var(--azulito);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--azulito);
+    margin-right: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 2px 0 rgba(25, 37, 83, 0.589);
+}
+
+.btn-demo{
+    width: 105px;
+    height: 51px;
+    background: var(--azulito);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border-style: none;
+}
+
+/* Estilos para el footer */
+footer{
+    height: 50px;
+    margin: 40px auto 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+footer a{
+    color: var(--hueso);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 1034px){
+    /* Main */
+    main{
+        height: auto;
+    }
+    /* H2 */
+    .titulo-seccion{
+        font-size: 22px;
+    }
+    /* Header */
+    .contHeader-nav a{
+        display: none;
+    }
+    /* Introducción */
+    .perfil{
+        width: 146px;
+        height: 146px;
+    }
+    .presentacion{
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    .descripcion{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    /* Sobre mí */
+    .contSobreMi p{
+        margin-right: 150px;
+        font-size: 14px;
+    }
+
+    /* Habilidades y Habilidades */
+    .contSkills-tools{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    /* Formacion Academica */
+    .logo-formacion{
+        width: 100px;
+        height: 60px;
+        padding: 50px;
+    }
+
+    /* Experiencia Profesional */
+    .imagen-experiencia{
+        height: 200px;
+    }
+
+    .detalle-experiencia p{
+        margin-top: 0;
+    }
+}
+
+/* Hover para todos los a */
+a:hover{
+    color: var(--cyan);
+    text-decoration: underline;
 }

@@ -5,24 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
-    <header class="flex">
-        <div class="flex">
-            <img src="/img/logo.png" alt="logo">
-            <h1>El fulano de Douglas</h1>
+    <header class="flex contHeader">
+        <div class="flex contHeader-derecha">
+            <img class="contHeader-derecha-logo" src="/img/logo.png" alt="logo">
+            <p class="contHeader-derecha-nombre">El fulano de Douglas</p>
         </div>
-        <div class="flex">
-            <li class="bloquear">
-                <ul>Sobre mí</ul>
-                <ul>Habilidades</ul>
-                <ul>Pasatiempos</ul>
-                <ul>Formación</ul>
-                <ul>Proyectos</ul>
-                <ul>contacto@fulano.com</ul>
-            </li>
-        </div>
+        <nav class="flex contHeader-nav">
+            <a href="#sobreMi">Sobre mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#hobbies">Pasatiempos</a>
+            <a href="#formacion">Formación</a>
+            <a href="#exp">Proyectos</a>
+            <a href="https://mail.google.com/">contacto@fulano.com</a>
+        </nav>
     </header>
+    <main>
+        <section class="flex contIntroducción" id="intro">
+            <div class="introduccion">
+                <h1 class="presentacion">Hola, mi nombre es Fulano y hago páginas web:D</h1>
+                <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime et at commodi totam a modi nulla harum odio, cupiditate hic incidunt, labore aperiam cum tempore architecto ut iure doloribus beatae.</p>
+                <div class="flex enlaces">
+                    <a href="https://github.com/Alwallo">GitHub</a>
+                    <a href="https://www.linkedin.com/in/alvaro-gonzalez-b-a263b824a/">Linkedin</a>
+                    <a href="https://www.instagram.com/alwallo_/">Instagram</a>
+                    <a href="">Currículo</a>
+                </div>
+            </div>
+            <img class="perfil" src="/img/perfil.jpg" alt="perfil">
+        </section>
+        <section class="flex contSobreMi" id="sobreMi">
+            <h2 class="titulo-seccion">Sobre mí</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis ipsum corporis quibusdam nulla doloribus itaque, molestiae aspernatur et minima recusandae ipsam nihil quasi ducimus voluptatibus provident odio aut ipsa.</p>
+            <p>Quasi saepe, cumque amet provident vel commodi ab, aut exercitationem laboriosam perspiciatis ex. Soluta saepe, inventore rerum, explicabo in voluptatum beatae quia quam voluptas animi nostrum fuga perspiciatis impedit debitis.</p>
+            <img class="firma" src="/img/Firma Digital.png" alt="">
+        </section>
+        <section class="contSkills">
+            <h2 id="skills" class="titulo-seccion">Habilidades</h2>
+            <div class="contSkills-tools flex">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <p>Html 5</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <p>Javascript</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-php"></i>
+                    <p>PHP</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-node"></i>
+                    <p>Node JS</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+            </div>
+            <h2 id="hobbies" class="titulo-seccion">Pasatiempos</h2>
+            <div class="contSkills-tools flex">
+                <div>
+                    <i class="fa-solid fa-eye"></i>
+                    <p>Ver series</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-playstation"></i>
+                    <p>Videojuegos</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-eye"></i>
+                    <p>Chismear</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <p>Programar</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-eye"></i>
+                    <p>Mimir</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <p>Perder tiempo</p>
+                </div>
+            </div>
+        </section>
+        <section class="contFormacion">
+            <h2 id="formacion" class="titulo-seccion">Formación Académica</h2>
+            <div class="contFormacion-cuadros flex">
+                <div>
+                    <div class="cuadro-logo flex">
+                        <img class="logo-formacion" src="/img/Logo UNI.png" alt="">
+                    </div>
+                    <h3>Ing. Sistemas</h3>
+                    <p>En curso</p>
+                </div>
+                <div>
+                    <div class="cuadro-logo flex">
+                        <img class="logo-formacion" src="/img/logo Douglas.png" alt="">
+                    </div>
+                    <h3>React</h3>
+                    <p>En curso</p>
+                </div>
+                <div>
+                    <div class="cuadro-logo flex">
+                        <img class="logo-formacion" src="/img/Logo EdTeam.jpg" alt="">
+                    </div>
+                    <h3>Desarrollo web</h3>
+                    <p>2022</p>
+                </div>
+            </div>
+        </section>
+        <section class="contExperiencia">
+            <h2 id="exp" class="titulo-seccion">Experiencia Profesional</h2>
+            <div class="flex">
+                <img class="imagen-experiencia" src="/img/proyecto orbitech.png" alt="">
+                <div class="detalle-experiencia">
+                    <h3>Frontend Orbitech Ecommerce</h3>
+                    <p>Challenge UNI</p>
+                    <button class="btn-repo" onclick="location.href='https://github.com/Alwallo/Proyecto-Final-Dise-o-de-Sistemas'">Repositorio</button>
+                    <button class="btn-demo" onclick="location.href='404/404.html'">Ver Demo</button>
+                </div>
+            </div>
+        </section>
+        <footer class="flex">
+            <a href="#intro">Volver al principio</a>
+        </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/c9b96bfd3b.js" crossorigin="anonymous"></script>
 </body>
 </html>

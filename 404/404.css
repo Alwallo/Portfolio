@@ -1,0 +1,42 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  .error-page {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .error-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    color: #2A7AE4;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  a {
+    display: inline-block;
+    background-color: #2A7AE4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  a:hover {
+    background-color: #2A7AE4;
+  }
+  
