@@ -76,7 +76,7 @@ h1, h2, h3, p{
 }
 
 .introduccion{
-    margin-right: 17px;
+    margin-right: 50px;
 }
 
 .presentacion{
@@ -95,6 +95,7 @@ h1, h2, h3, p{
     font-size: 22px;
     color: var(--gris);
     text-align: justify;
+    line-height: 35px;
 }
 
 .perfil{
@@ -102,13 +103,9 @@ h1, h2, h3, p{
 }
 
 .enlaces a{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+    font-size: 32px;
     color: var(--gris);
     margin-right: 32px;
-    text-decoration-line: none;
 }
 
 /* Estilos para la sección 2 (Sobre Mi)*/
@@ -142,7 +139,7 @@ h1, h2, h3, p{
     margin-bottom: 16px;
 }
 
-/* Estilos para la sección 3 (Habilidades y Pasatiempos) */
+/* Estilos para la sección 3 (Habilidades) */
 .titulo-seccion{
     font-family: 'Raleway';
     font-style: normal;
@@ -154,7 +151,8 @@ h1, h2, h3, p{
 }
 
 .contSkills-tools{
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 16px 0;
     gap: 8px;
 }
@@ -163,7 +161,13 @@ h1, h2, h3, p{
     padding: 16px;
     width: 176px;
     height: 174px;
-    background: var(--blanco);
+    background: linear-gradient(225deg, var(--azulito), var(--blanco) 75%);
+    border-radius: 10px;
+    box-shadow: 14px 13px 13px -9px rgba(0,0,0,0.51);
+}
+
+.contSkills-tools>div:hover{
+    background: linear-gradient(225deg, var(--cyan), var(--blanco) 75%);
 }
 
 .contSkills-tools div i{
@@ -199,7 +203,8 @@ h1, h2, h3, p{
 }
 
 .contFormacion-cuadros{
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -210,12 +215,15 @@ h1, h2, h3, p{
 
 .cuadro-logo{
     background: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 14px 13px 13px -9px rgba(0,0,0,0.51);
 }
 
 .logo-formacion{
     width: 150px;
     height: 100px;
     padding: 50px;
+    object-fit: contain;
 }
 
 .contFormacion-cuadros div h3{
@@ -225,6 +233,9 @@ h1, h2, h3, p{
     font-size: 22px;
     color: var(--gris);
     margin-bottom: 8px;
+    width: 250px;
+    text-align: center;
+    white-space: break-spaces;
 }
 
 .contFormacion-cuadros div p{
@@ -234,19 +245,25 @@ h1, h2, h3, p{
     font-size: 16px;
     color: var(--gris);
     margin-top: 0;
+    text-align: center;
 }
 
 /* Estilos para la sección 5 (Experiencia Laboral) */
+.exp{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
 .imagen-experiencia{
     height: 406px;
     border: 1px solid var(--azulito);
+    border-radius: 10px;
+    box-shadow: 14px 13px 13px -9px rgba(0,0,0,0.51);    
 }
 
-.detalle-experiencia{
-    margin-left: 16px;
-}
-
-.detalle-experiencia h3{
+.detalle-experiencia>h3{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -255,13 +272,15 @@ h1, h2, h3, p{
     margin-bottom: 8px;
 }
 
-.detalle-experiencia p{
+.detalle-experiencia>p{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     color: var(--gris);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    line-height: 25px;
+    text-align: justify;
 }
 
 .btn-repo{
@@ -297,7 +316,7 @@ button:hover{
 
 /* Estilos para el footer */
 footer{
-    height: 50px;
+    height: 100px;
     margin: 40px auto 0 auto;
     align-items: center;
     justify-content: center;
@@ -307,6 +326,7 @@ footer{
 footer a{
     color: var(--hueso);
     text-decoration: none;
+    font-size: 28px;
 }
 
 /* Responsive */
@@ -335,20 +355,13 @@ footer a{
     .descripcion{
         font-size: 16px;
         margin-bottom: 16px;
+        line-height: 24px;
     }
 
     /* Sobre mí */
     .contSobreMi p{
         margin-right: 150px;
         font-size: 14px;
-    }
-
-    /* Habilidades y Habilidades */
-    .contSkills-tools{
-        display: grid;
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        justify-items: center;
-        row-gap: 20px;
     }
 
     /* Formacion Academica */
