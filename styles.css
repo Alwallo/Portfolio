@@ -17,7 +17,10 @@ main{
     height: 590px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    margin: auto 32px;
+    position: relative;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: center;
 }
 
 h1, h2, h3, p{
@@ -111,8 +114,10 @@ h1, h2, h3, p{
 /* Estilos para la sección 2 (Sobre Mi)*/
 .contSobreMi{
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     background: var(--hueso);
+    position: absolute;
+    left: 0;
 }
 
 .contSobreMi h2{
@@ -129,9 +134,10 @@ h1, h2, h3, p{
     font-weight: 400;
     font-size: 16px;
     color: var(--gris);
-    margin-bottom: 16px;
     text-align: justify;
-    margin-right: 300px;
+    margin-right: 32px;
+    margin-left: 32px;
+    line-height: 25px;
 }
 
 .firma{
@@ -140,6 +146,10 @@ h1, h2, h3, p{
 }
 
 /* Estilos para la sección 3 (Habilidades) */
+.contSkills{
+    margin-top: 430px;
+}
+
 .titulo-seccion{
     font-family: 'Raleway';
     font-style: normal;
@@ -190,6 +200,9 @@ h1, h2, h3, p{
 /* Estilos para la sección 4 (Formación Académica) */
 .contFormacion{
     background: var(--hueso);
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 
 .contFormacion h2{
@@ -249,18 +262,23 @@ h1, h2, h3, p{
 }
 
 /* Estilos para la sección 5 (Experiencia Laboral) */
+.contExperiencia{
+    margin-top: 450px;
+}
 .exp{
     margin-bottom: 32px;
     display: flex;
     justify-content: center;
     gap: 16px;
+    padding-right: 14px;
 }
 
 .imagen-experiencia{
     height: 406px;
     border: 1px solid var(--azulito);
     border-radius: 10px;
-    box-shadow: 14px 13px 13px -9px rgba(0,0,0,0.51);    
+    box-shadow: 14px 13px 13px -9px rgba(0,0,0,0.51);
+    box-sizing: border-box;
 }
 
 .detalle-experiencia>h3{
@@ -320,7 +338,10 @@ footer{
     margin: 40px auto 0 auto;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--gris);
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 
 footer a{
