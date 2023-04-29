@@ -116,8 +116,9 @@ h1, h2, h3, p{
     flex-direction: column;
     align-items: center;
     background: var(--hueso);
-    position: absolute;
-    left: 0;
+    position: relative;
+    left: -32px;
+    width: 105%;
 }
 
 .contSobreMi h2{
@@ -147,7 +148,7 @@ h1, h2, h3, p{
 
 /* Estilos para la sección 3 (Habilidades) */
 .contSkills{
-    margin-top: 430px;
+    padding-bottom: 32px;
 }
 
 .titulo-seccion{
@@ -200,19 +201,10 @@ h1, h2, h3, p{
 /* Estilos para la sección 4 (Formación Académica) */
 .contFormacion{
     background: var(--hueso);
-    position: absolute;
-    left: 0;
-    width: 100%;
-}
-
-.contFormacion h2{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    text-align: center;
-    color: var(--gris);
-    padding-top: 16px;
+    position: relative;
+    left: -32px;
+    width: 105%;
+    padding: 16px 0;
 }
 
 .contFormacion-cuadros{
@@ -262,9 +254,6 @@ h1, h2, h3, p{
 }
 
 /* Estilos para la sección 5 (Experiencia Laboral) */
-.contExperiencia{
-    margin-top: 450px;
-}
 .exp{
     margin-bottom: 32px;
     display: flex;
@@ -335,13 +324,13 @@ button:hover{
 /* Estilos para el footer */
 footer{
     height: 100px;
-    margin: 40px auto 0 auto;
+    margin: 16px auto 0 auto;
     align-items: center;
     justify-content: center;
     background-color: var(--gris);
-    position: absolute;
-    left: 0;
-    width: 100%;
+    position: relative;
+    left: -32px;
+    width: 105%;
 }
 
 footer a{
@@ -381,7 +370,6 @@ footer a{
 
     /* Sobre mí */
     .contSobreMi p{
-        margin-right: 150px;
         font-size: 14px;
     }
 
@@ -399,6 +387,107 @@ footer a{
 
     .detalle-experiencia p{
         margin-top: 0;
+    }
+}
+
+@media(max-width: 762px){
+    /* H2 */
+    .titulo-seccion{
+        font-size: 18px;
+    }
+
+    main{
+        padding: 0 8px;
+        align-items: center;
+    }
+
+    /* Introducción */
+    .contIntroducción{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 8px;
+        width: 115%;
+    }
+
+    .descripcion{
+        font-size: 10px;
+        margin-bottom: 16px;
+        line-height: 16px;
+    }
+
+    .enlaces a{
+        font-size: 16px;
+        margin-right: 16px;
+    }
+
+    /* Sobre mí */
+    .contSobreMi{
+        width: 115%;
+    }
+
+    .contSobreMi p{
+        font-size: 10px;
+        line-height: 16px;
+        margin-right: 16px;
+    }
+
+    /* Habilidades */
+    .contSkills{
+        width: 100%;
+    }
+
+    .contSkills-tools div{
+        width: 120px;
+        height: 122px;
+    }
+
+    .tools>p{
+        display: none;
+    }
+
+    /* Formacion Academica */
+    .contFormacion{
+        width: 120%;
+    }
+
+    /* Experiencia Profesional */
+    .exp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
+    .imagen-experiencia{
+        width: 320px;
+    }
+
+    .detalle-experiencia>h3{
+        font-size: 16px;
+    }
+
+    .detalle-experiencia>p{
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .detalle-experiencia>button{
+        width: 70px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    /* Footer */
+    footer{
+        width: 115%;
+        height: 40px;
+    }
+
+    footer>a{
+        font-size: 16px;
     }
 }
 
