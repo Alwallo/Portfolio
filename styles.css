@@ -398,16 +398,20 @@ footer a{
 
     main{
         padding: 0 8px;
-        align-items: center;
     }
 
     /* Introducción */
     .contIntroducción{
         display: flex;
         flex-direction: column-reverse;
-        text-align: center;
+        justify-content: center;
         gap: 8px;
-        width: 115%;
+        width: 100%;
+    }
+
+    .introduccion{
+        margin-right: 0;
+        text-align: center;
     }
 
     .descripcion{
@@ -423,13 +427,15 @@ footer a{
 
     /* Sobre mí */
     .contSobreMi{
-        width: 115%;
+        width: 100%;
+        left: 0px;
     }
 
     .contSobreMi p{
         font-size: 10px;
         line-height: 16px;
-        margin-right: 16px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     /* Habilidades */
@@ -448,13 +454,15 @@ footer a{
 
     /* Formacion Academica */
     .contFormacion{
-        width: 120%;
+        width: 100%;
+        left: 0px;
     }
 
     /* Experiencia Profesional */
     .exp{
         display: flex;
         flex-direction: column;
+        padding-right: 0;
     }
 
     .reverse{
@@ -482,8 +490,9 @@ footer a{
 
     /* Footer */
     footer{
-        width: 115%;
         height: 40px;
+        box-sizing: content-box;
+        left: -8px;
     }
 
     footer>a{
