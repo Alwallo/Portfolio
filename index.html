@@ -2,167 +2,238 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
-    <title>Portafolio de Alwallo</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Portafolio | Alvaro González Ballesteros</title>
+    <script src="https://kit.fontawesome.com/c9b96bfd3b.js" crossorigin="anonymous" defer></script>
+    </head>
 <body>
-    <header class="flex contHeader">
-        <div class="flex contHeader-derecha">
-            <img class="contHeader-derecha-logo" src="https://i.ibb.co/LgDx2q9/logo.png" alt="logo">
-            <p class="contHeader-derecha-nombre">Alvaro González Ballesteros</p>
+
+    <!-- <header class="header">
+        <div class="header__container">
+            <figure class="header__branding">
+                <img class="header__logo" src="https://i.ibb.co/LgDx2q9/logo.png" alt="Logo Alwallo">
+                <figcaption class="header__name">Alvaro González Ballesteros</figcaption>
+            </figure>
+            <nav class="header__nav" role="navigation" aria-label="Navegación principal">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#about" class="header__nav-link">Sobre mí</a></li>
+                    <li class="header__nav-item"><a href="#skills" class="header__nav-link">Habilidades</a></li>
+                    <li class="header__nav-item"><a href="#formation" class="header__nav-link">Formación</a></li>
+                    <li class="header__nav-item"><a href="#projects" class="header__nav-link">Proyectos</a></li>
+                    <li class="header__nav-item header__nav-item--contact">
+                        <a href="mailto:alvgonzalezb@gmail.com" class="header__nav-link">Gmail</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="flex contHeader-nav">
-            <a href="#sobreMi">Sobre mí</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#formacion">Formación</a>
-            <a href="#exp">Proyectos</a>
-            <a href="mailto://alvgonzalezb@gmail.com">alvgonzalezb@gmail.com</a>
-        </nav>
-    </header>
-    <main>
-        <section class="flex contIntroducción" id="intro">
-            <div class="introduccion">
-                <h1 class="presentacion">Hola, mi nombre es Alvaro González!</h1>
-                <p class="descripcion">
-                    Actualmente estoy estoy estudiando Ingeniería de Sistemas en la Universidad Nacional de Ingeniería
-                    (UNI, Managua). Soy desarollador web junior en la parte del front-end y he trabajado en proyectos 
-                    universitarios y challenges que me han generado experiencia en la programación web. Mi objetivo es 
-                    convertirme en desarrollador senior para ayudar a otros desarrolladores en su proceso de crecimiento.
-                </p>
-                <div class="flex enlaces">
-                    <a href="https://github.com/Alwallo">
-                        <i class="fa-brands fa-github icono"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/alvaro-gonzalez-b-a263b824a/">
-                        <i class="fa-brands fa-linkedin icono"></i>
-                    </a>
-                    <a href="https://www.instagram.com/alwallo_/">
-                        <i class="fa-brands fa-instagram icono"></i>
-                    </a>
-                </div>
-            </div>
-            <img class="perfil" src="https://github.com/alwallo.png" alt="perfil">
-        </section>
-        <section class="flex contSobreMi" id="sobreMi">
-            <h2 class="titulo-seccion">Sobre mí</h2>
-            <p>
-                Soy un desarrollador web junior enfocado en el Front-End con experiencia en HTML, CSS y JavaScript. 
-                Me apasiona crear sitios web atractivos y funcionales que cumplan con los estándares de 
-                accesibilidad y rendimiento. Actualmente estoy aprendiendo React para hacer las aplicaciones web
-                más dinámicas y reutilizables. 
-            </p>
-            <p>
-                En mi tiempo libre, me gusta jugar videojuegos de batalla, de carreras y de aventura, entre ellos Fortnite, 
-                Fall Guys y Mario Kart. Además amo ver series de diferentes géneros, aunque es un plus si son de 
-                misterio y suspenso. Paso el día escuchando música mientras codifico, me motiva, me energiza, me sienta
-                bien.
-            </p>
-            <p>
-                Me considero alguien curioso, perseverante y autodidacta, siempre dispuesto a aprender nuevas 
-                tecnologías y herramientas para mejorar mis habilidades como desarrollador web. Me gusta ayudar a mis
-                compañeros en cualquier problema que necesiten en el cual sea capaz de resolverlo.
-            </p>
-            <img class="firma" src="https://i.ibb.co/jJ3WYMX/Firma-Digital.png" alt="">
-        </section>
-        <section class="contSkills">
-            <h2 id="skills" class="titulo-seccion">Habilidades</h2>
-            <div class="contSkills-tools flex">
-                <div class="tools">
-                    <i class="fa-brands fa-html5"></i>
-                    <p>Html 5</p>
-                </div>
-                <div class="tools">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p>CSS</p>
-                </div>
-                <div class="tools">
-                    <i class="fa-brands fa-js"></i>
-                    <p>Javascript</p>
-                </div>
-                <div class="tools">
-                    <i class="fa-brands fa-react"></i>
-                    <p>React</p>
-                </div>
-            </div>
-        </section>
-        <section class="contFormacion">
-            <h2 id="formacion" class="titulo-seccion">Formación Académica</h2>
-            <div class="contFormacion-cuadros flex">
-                <div>
-                    <div class="cuadro-logo flex">
-                        <img class="logo-formacion" src="https://i.ibb.co/M2Nhg7S/Logo-UNI.png" alt="">
-                    </div>
-                    <h3>Ingeniería de Sistemas</h3>
-                    <p>En curso | UNI</p>
-                </div>
-                <div>
-                    <div class="cuadro-logo flex">
-                        <img class="logo-formacion" src="https://i.ibb.co/PY4m2VC/Azul-School.jpg" alt="">
-                    </div>
-                    <h3>HTML, CSS, JS</h3>
-                    <p>2022 | Azul School</p>
-                </div>
-                <div>
-                    <div class="cuadro-logo flex">
-                        <img class="logo-formacion" src="https://i.ibb.co/xXCRS3Z/Logo-Ed-Team.jpg" alt="">
-                    </div>
-                    <h3>Intro a la web</h3>
-                    <p>2022 | EDteam</p>
-                </div>
-                <div>
-                    <div class="cuadro-logo flex">
-                        <img class="logo-formacion" src="https://i.ibb.co/gd1mBFZ/openbootcamp.png" alt="">
-                    </div>
-                    <h3>React</h3>
-                    <p>2023 | Open Bootcamp</p>
-                </div>
-            </div>
-        </section>
-        <section class="contExperiencia">
-            <h2 id="exp" class="titulo-seccion">Experiencia Profesional</h2>
-            <div class="flex exp">
-                <img class="imagen-experiencia" src="https://i.ibb.co/k6vrjGn/proyecto-orbitech.png" alt="">
-                <div class="detalle-experiencia">
-                    <h3>Front-End Orbitech Ecommerce</h3>
-                    <p>Este proyecto fue realizado para la asignatura de Aplicaciones Gráficas en la UNI. 
-                        Consiste en un sitio web de compras en línea para la empresa Orbitech Nicaragua.
+    </header> -->
+
+    <main class="main-content">
+
+        <section class="intro" id="intro">
+            <div class="intro__container">
+                <div class="intro__text">
+                    <h1 class="intro__title">Hola, mi nombre es Alvaro González</h1>
+                    <p class="intro__description">
+                        Soy estudiante de Ingeniería de Sistemas en la Universidad Nacional de Ingeniería (UNI, Managua) y desarrollador web junior con enfoque en full-stack. He trabajado en proyectos implementados y desafíos prácticos que me han permitido adquirir experiencia en desarrollo web. Mi meta es crecer profesionalmente hasta convertirme en desarrollador senior y así contribuir al crecimiento de otros programadores, compartiendo conocimientos y buenas prácticas.
                     </p>
-                    <button class="btn-repo" onclick="location.href='https://github.com/Alwallo/Orbitech-Ecommerce'">Repositorio</button>
-                    <button class="btn-demo" onclick="location.href=''" hidden>Ver Demo</button>
+                    <ul class="intro__social-links">
+                        <li><a href="https://github.com/Alwallo" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Github"><i class="fa-brands fa-github intro__icon"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/alvaro-gonzalez-b-a263b824a/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn"><i class="fa-brands fa-linkedin intro__icon"></i></a></li>
+                        <li><a href="https://www.instagram.com/alwallo_/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Instagram"><i class="fa-brands fa-instagram intro__icon"></i></a></li>
+                        <li>
+                            <a href="https://wa.me/50576183880" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+                              <i class="fa-brands fa-whatsapp intro__icon"></i>
+                            </a>
+                          </li>
+                    
+                          <li>
+                            <a href="mailto:alvgonzalezb@gmail.com" aria-label="Enviar correo electrónico">
+                              <i class="fas fa-envelope intro__icon"></i>
+                            </a>
+                          </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="flex exp reverse">
-                <div class="detalle-experiencia">
-                    <h3>Front-End Random Ecommerce</h3>
-                    <p>Este es un challenge de Alura Geek, consiste en crear la parte del front-end de un ecommerce genérico. 
-                        Para su desarrollo solamente se utilizó HTML y CSS.
-                    </p>
-                    <button class="btn-repo" onclick="location.href='https://github.com/Alwallo/Ecommerce-Practice'">Repositorio</button>
-                    <button class="btn-demo" onclick="location.href=''" hidden>Ver Demo</button>
-                </div>
-                <img class="imagen-experiencia" src="https://i.ibb.co/CtF292c/ecommerce.png" alt="">
-            </div>
-            <div class="flex exp">
-                <img class="imagen-experiencia" src="https://i.ibb.co/bH5NBCH/todo-list.png" alt="">
-                <div class="detalle-experiencia">
-                    <h3>ToDo List</h3>
-                    <p>Este es un challenge creado para darle funcionalidad a una lista de tareas con JavaScript,
-                        utilizando manejo del DOM y eventos.
-                    </p>
-                    <button class="btn-repo" onclick="location.href='https://github.com/Alwallo/TODO-JavaScript-Challenge'">Repositorio</button>
-                    <button class="btn-demo" onclick="location.href='https://alwallo.github.io/TODO-JavaScript-Challenge/'">Ver Demo</button>
-                </div>
+                <img class="intro__profile-pic" src="images/profile.png" alt="Foto de perfil de Alvaro González">
             </div>
         </section>
-        <footer class="flex">
-            <h2>Creado por Alvaro González | Alwallo</h2>
-        </footer>
+
+        <section class="about" id="about">
+            <div class="about__container">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="about__content">
+                    <p>
+                        Soy un desarrollador web junior con una base sólida tanto en Front-End como en Back-End, especializado en tecnologías como React, C# y SQL Server. Me enfoco en crear aplicaciones web modernas, funcionales y con una experiencia de usuario fluida, asegurando buenas prácticas de accesibilidad, rendimiento y escalabilidad.
+                    </p>
+                    <p>
+                        Actualmente estoy fortaleciendo mis habilidades con React para desarrollar interfaces dinámicas y reutilizables, mientras consolido mi experiencia en el ecosistema de .NET para construir APIs robustas y conectar con bases de datos relacionales como SQL Server. Este enfoque full-stack me permite comprender y participar activamente en todo el ciclo de desarrollo de una aplicación.
+                    </p>
+                    <p>
+                        Más allá del código, soy una persona entusiasta por el aprendizaje continuo. Disfruto enfrentar nuevos retos, investigar por mi cuenta y adaptarme rápidamente a herramientas o tecnologías que optimicen mi trabajo como desarrollador. También valoro mucho el trabajo en equipo y siempre estoy dispuesto a apoyar a mis compañeros cuando necesitan resolver un problema técnico.
+                    </p>
+                    <p>
+                        En mi tiempo libre, soy un apasionado de los videojuegos y del ajedrez ya que estimulan mi pensamiento estratégico y competitivo. También disfruto de las series, siendo mis favoritas aquellas con misterio y suspenso. La música es mi compañera constante mientras programo: me inspira, me da ritmo y convierte cualquier línea de código en una experiencia creativa.
+                    </p>
+                </div>
+                <img class="about__signature" src="images/firma.png" alt="Firma digital de Alvaro González">
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="skills__container">
+                <h2 class="section-title">Habilidades</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <i class="fa-brands fa-html5 skills__icon"></i>
+                        <p class="skills__name">HTML</p>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fa-brands fa-css3-alt skills__icon"></i>
+                        <p class="skills__name">CSS</p>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fa-brands fa-js skills__icon"></i>
+                        <p class="skills__name">JavaScript</p>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fa-brands fa-react skills__icon"></i>
+                        <p class="skills__name">React</p>
+                    </li>
+                      <li class="skills__item">
+                        <i class="fas fa-database skills__icon"></i>
+                        <p class="skills__name">SQL Server</p>
+                      </li>
+              
+                      <li class="skills__item">
+                        <i class="fas fa-code skills__icon"></i>
+                        <p class="skills__name">C#</p>
+                      </li>
+              
+                      <li class="skills__item">
+                        <i class="fa-brands fa-git-alt skills__icon"></i>
+                        <p class="skills__name">Git</p>
+                      </li>
+              
+                      <li class="skills__item">
+                        <i class="fas fa-gears skills__icon"></i>
+                        <p class="skills__name">Azure DevOps</p>
+                      </li>
+              
+                      <li class="skills__item">
+                        <i class="fa-brands fa-github skills__icon"></i>
+                        <p class="skills__name">GitHub</p>
+                      </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="formation" id="formation">
+            <div class="formation__container">
+                <h2 class="section-title">Formación Académica</h2>
+                <ul class="formation__list">
+                    <li class="formation__item">
+                        <div class="formation__logo-container">
+                            <img class="formation__logo" src="https://i.ibb.co/M2Nhg7S/Logo-UNI.png" alt="Logo UNI">
+                        </div>
+                        <h3 class="formation__course">Ingeniería de Sistemas</h3>
+                        <p class="formation__details">En curso | UNI</p>
+                    </li>
+                    <li class="formation__item">
+                        <div class="formation__logo-container">
+                            <img class="formation__logo" src="https://i.ibb.co/PY4m2VC/Azul-School.jpg" alt="Logo Azul School">
+                        </div>
+                        <h3 class="formation__course">HTML, CSS, JS</h3>
+                        <p class="formation__details">2022 | Azul School</p>
+                    </li>
+                    <li class="formation__item">
+                        <div class="formation__logo-container">
+                            <img class="formation__logo" src="https://i.ibb.co/xXCRS3Z/Logo-Ed-Team.jpg" alt="Logo EDteam">
+                        </div>
+                        <h3 class="formation__course">Intro a la web</h3>
+                        <p class="formation__details">2022 | EDteam</p>
+                    </li>
+                    <li class="formation__item">
+                        <div class="formation__logo-container">
+                            <img class="formation__logo" src="https://i.ibb.co/gd1mBFZ/openbootcamp.png" alt="Logo Open Bootcamp">
+                        </div>
+                        <h3 class="formation__course">React</h3>
+                        <p class="formation__details">2023 | Open Bootcamp</p>
+                    </li>
+                    <li class="formation__item">
+                        <div class="formation__logo-container">
+                            <img class="formation__logo" src="./images/Curso-midudev.png" alt="midudev">
+                        </div>
+                        <h3 class="formation__course">React</h3>
+                        <p class="formation__details">2024 | midudev</p>
+                    </li>
+                    <li class="formation__item">
+                        <div class="formation__logo-container">
+                            <img class="formation__logo" src="./images/nextjs-logo-square.webp" alt="nextjs">
+                        </div>
+                        <h3 class="formation__course">Next.JS</h3>
+                        <p class="formation__details">2025 | Vercel</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="projects__container">
+                <h2 class="section-title">Experiencia Profesional</h2>
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <img class="projects__image" src="https://i.ibb.co/k6vrjGn/proyecto-orbitech.png" alt="Captura de pantalla del proyecto Orbitech Ecommerce">
+                        <div class="projects__details">
+                            <h3 class="projects__title">Front-End Orbitech Ecommerce</h3>
+                            <p class="projects__description">Este proyecto fue realizado para la asignatura de Aplicaciones Gráficas en la UNI. Consiste en un sitio web de compras en línea para la empresa Orbitech Nicaragua.</p>
+                            <div class="projects__buttons">
+                                <button class="button button--secondary" onclick="location.href='https://github.com/Alwallo/Orbitech-Ecommerce'">Repositorio</button>
+                                <button class="button button--primary" onclick="location.href=''" hidden>Ver Demo</button>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="projects__item projects__item--reverse">
+                         <img class="projects__image" src="https://i.ibb.co/CtF292c/ecommerce.png" alt="Captura de pantalla del proyecto Random Ecommerce">
+                        <div class="projects__details">
+                            <h3 class="projects__title">Front-End Random Ecommerce</h3>
+                            <p class="projects__description">Este es un challenge de Alura Geek, consiste en crear la parte del front-end de un ecommerce genérico. Para su desarrollo solamente se utilizó HTML y CSS.</p>
+                             <div class="projects__buttons">
+                                <button class="button button--secondary" onclick="location.href='https://github.com/Alwallo/Ecommerce-Practice'">Repositorio</button>
+                                <button class="button button--primary" onclick="location.href=''" hidden>Ver Demo</button>
+                             </div>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <img class="projects__image" src="https://i.ibb.co/bH5NBCH/todo-list.png" alt="Captura de pantalla del proyecto ToDo List">
+                        <div class="projects__details">
+                            <h3 class="projects__title">ToDo List</h3>
+                            <p class="projects__description">Este es un challenge creado para darle funcionalidad a una lista de tareas con JavaScript, utilizando manejo del DOM y eventos.</p>
+                             <div class="projects__buttons">
+                                <button class="button button--secondary" onclick="location.href='https://github.com/Alwallo/TODO-JavaScript-Challenge'">Repositorio</button>
+                                <button class="button button--primary" onclick="location.href='https://alwallo.github.io/TODO-JavaScript-Challenge/'">Ver Demo</button>
+                             </div>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <img class="projects__image" src="images/ballesteroshealthcare.png" alt="Captura de pantalla de ballesteroshealthcare">
+                        <div class="projects__details">
+                            <h3 class="projects__title">Ballesteros Healthcare</h3>
+                            <p class="projects__description">Este es un proyecto ya implementado en Netlify utilizando los conocimientos adquiridos en el curso de Next.JS, mi primer proyecto lanzado a producción a la web.</p>
+                             <div class="projects__buttons">
+                                <button class="button button--secondary" onclick="location.href='https://github.com/Alwallo/BallesterosHealthcare'">Repositorio</button>
+                                <button class="button button--primary" onclick="location.href='https://www.ballesteroshealthcare.com/'">Visitar página</button>
+                             </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
     </main>
-    <script src="https://kit.fontawesome.com/c9b96bfd3b.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
